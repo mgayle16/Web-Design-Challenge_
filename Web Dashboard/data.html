@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvin Web Design HW</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="marvin_page.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+  </head>
+<body>
+    <!-- Create Navbar
+    <div class="container"></div>
+      <div class= "row"></div>
+      <a class="navbar-brand" href="index.html">Latitude Dashboard</a>
+      <div class="container">
+        <div class= "row justify-content-end">
+          <div class="column-md-8">
+            <nav class="navbar">
+              <ul>
+                <li class="nav-item dropdown show"> 
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                  </a>
+                  <div class="dropdown-menu show" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="max_temp_plot.html">Max Temperature</a>
+                    <a class="dropdown-item" href="humidity_plot.html">Humidity</a>
+                    <a class="dropdown-item" href="cloudiness_plot.html">Cloudiness</a>
+                    <a class="dropdown-item" href="wind_plot.html">Wind Speed</a>
+                  </div>
+                </li>
+                <li>
+                  <a href="comparison.html">Comparison</a>
+                </li>
+                <li>
+                  <a href="data.html">Data</a>
+                </li>
+              </ul>
+            </nav>
+           </div>
+        </div>
+      </div> -->
+
+          <!-- navbar -->
+    <nav class="navbar navbar-expand-sm navbar-black bg-light">
+      <div class="container">
+        <a class href="index.html">Latitude</a>
+        <div class= "row justify-content-end"></div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+              </a>
+              <div class="dropdown-menu show" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="max_temp_plot.html">Max Temperature</a>
+                <a class="dropdown-item" href="humidity_plot.html">Humidity</a>
+                <a class="dropdown-item" href="cloudiness_plot.html">Cloudiness</a>
+                <a class="dropdown-item" href="wind_plot.html">Wind Speed</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comparison.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- /navbar -->
+
+<!-- container -->
+<div class="container pt-5">
+  <div class="row">
+    <!-- summary -->
+<div class="col-lg-7">
+  <h1 class="mb-4">SUMMARY: Latitude vs. X</h1>
+  <hr class="mr-4">
+  <img class="p-3" src="assets/max_temp.png" alt="vs. max temperature" height="220" width="260" align="left">
+  <p class="pt-2 mr-2">This project's purpose is to show if there is a relationship between latitude and four factors: max temperature, wind speed, humidity, and cloud cover. The city data was pulled from citypy and weather data was pulled from the OpenWeather API. 500 random cities were used for this dataset. Seaborn and matplotlib were used to make the scatter plots, which show the relationship between latitude and the four factors. </p>
+  <p class="pl-2 mr-2">While this is a representative model of weather in cities across the world, it is only a snapshot of one day's weather. A yearly or even longer historical view could offer more insight. This site contains the visualizations, analysis, and source data.</p>
+</div><!-- /summary -->
+
+<!-- Visuals on main page Right-->
+<div class="card col-lg ml-3">
+  <h3 class="pb-4">Visualizations</h3> 
+  <div class="row justify-content-center">
+    <div class="col-lg-5 col-sm-3">
+      <div class="card mb-3">
+        <a href="max_temp_plot.html" >
+          <img class="card-img-top" src="assets/max_temp.png" alt="vs. Max Temp">
+        </a>
+        <div class="card-body">
+          <h6 class="card-title text-center">Maximmum Temp</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-5 col-sm-3">
+      <div class="card mb-3">
+        <a href="humidity_plot.html" >
+          <img class="card-img-top" src="Assets/humidity.png" alt="vs. Humidity">
+        </a>
+        <div class="card-body">
+          <h6 class="card-title text-center">Humidity</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-5 col-sm-3">
+      <div class="card mb-3">
+        <a href="cloudiness_plot.html" >
+          <img class="card-img-top" src="Assets/cloudiness.png" alt="vs. Cloudiness">
+        </a>
+        <div class="card-body">
+          <h6 class="card-title text-center">Cloudness</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-5 col-sm-3">
+      <div class="card mb-3">
+        <a href="wind_plot.html" >
+          <img class="card-img-top" src="Assets/wind.png" alt="vs. Wind Speed">
+        </a>
+        <div class="card-body">
+          <h6 class="card-title text-center">Wind Speed</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+.navbar li {
+    display: inline-block;
+    padding: 2px;
+}
+
+.navbar li a {
+        color: grey;
+        text-decoration: none;
+      }
+
+.page-title{
+        text-decoration: none;
+      }
+.col-lg-4 {
+    padding: 50px;
+}
+
+a.navbar-brand{
+ font-size: 50px;
+ background-color: teal;
+}
+
+
+h1{
+    color: teal;
+}
+
+h3{
+    color: teal;
+}
+
+@media (max-width: 600px){
+   body{
+       background-color: white;
+   } 
+}
